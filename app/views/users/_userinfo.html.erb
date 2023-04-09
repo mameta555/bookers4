@@ -1,8 +1,6 @@
 <h1>User info</h1>
-<table>
-  <tr>
-    <td><%= image_tag user.get_profile_image(100,100) %></td>
-  </tr>
+<div class="mt-2"><%= image_tag user.get_profile_image(100,100) %></div>
+<table class="table">
   <tr>
     <th>name</th>
     <td><%= user.name %></td>

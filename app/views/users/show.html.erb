@@ -1,13 +1,18 @@
-<%= render 'users/userinfo', user: @user %>
-
-<%= render 'books/newbook', book: @book %>
-
-
-<h1>Books</h1>
-<table>
-  <tr>
-    <th></th>
-    <th>Title</th>
-    <th>Opinion</th>
-  </tr>
-</table>
+<div class="row">
+  <div class="col-md-3">
+    <%= render 'users/userinfo', user: @user %>
+    
+    <%= render 'books/newbook', book: @book %>
+  </div>
+  
+  <div class="col-md-8 offset-1">
+  <h1>Books</h1>
+  <table class="table">
+    <tr>
+      <th></th>
+      <th>Title</th>
+      <th>Opinion</th>
+    </tr>
+  </table>
+  </div>
+</div>
